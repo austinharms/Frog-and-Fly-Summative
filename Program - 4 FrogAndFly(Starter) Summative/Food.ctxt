@@ -2,4 +2,5 @@
 comment0.target=Food
 comment1.params=
 comment1.target=Food()
+comment1.text=\r\n\ when\ a\ food\ object\ is\ added\ is\ sets\ the\ image\ to\ a\ random\ image\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
 numComments=2

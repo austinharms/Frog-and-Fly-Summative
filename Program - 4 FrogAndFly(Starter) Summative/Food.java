@@ -3,7 +3,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Food extends Actor
 {
-    
+    /**
+     * when a food object is added is sets the image to a random image
+     * 
+     * @param there are no parameters
+     * @return nothing is returned
+     */
     public Food()
     {
         /*
@@ -19,13 +24,18 @@ public class Food extends Actor
          * one of the FIVE images assigned to it (instead of the one of three it currently uses) 
          */ 
 
-        int foodType = Greenfoot.getRandomNumber(3);
+        int foodType = Greenfoot.getRandomNumber(5);
         if( foodType == 0 ) {
             setImage("apple1.png");
         } else if( foodType == 1 ) {
             setImage("bananas.png");
         } else if( foodType == 2 ) {
             setImage("cherries.png");
+        } else if( foodType == 3 ) {
+            setImage("grapes.png");
+        } else
+        {
+           setImage("strawberry.png"); 
         }
     }   
 }

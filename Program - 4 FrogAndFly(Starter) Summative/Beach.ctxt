@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Beach
-comment0.text=\n\ 5\ marks\n
+comment0.text=\r\n\ 5\ marks\r\n
 comment1.params=
 comment1.target=Beach()
+comment1.text=\r\n\ runs\ an\ the\ start\ and\ creates\ a\ 800x600\ world,\ add\ a\ fly\ in\ a\ random\r\n\ location,\ adds\ a\ frog\ in\ the\ center\ of\ the\ world\ and\ adds\ a\ scorboard\ \r\n\ in\ the\ top\ left\ corner\ of\ the\ world\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
 comment2.params=n
 comment2.target=void\ addFood(int)
-comment2.text=\n\ Adds\ n\ Food\ objects\ to\ the\ world\n
-numComments=3
+comment2.text=\r\n\ when\ called\ it\ adds\ the\ set\ amount\ of\ food\ objects\ in\ random\ locations\r\n\ \r\n\ @param\ there\ is\ an\ intiger\ pramiter\ called\ n\r\n\ @return\ nothing\ is\ returned\r\n
+comment3.params=
+comment3.target=void\ update()
+comment3.text=\r\n\ when\ called\ runs\ addToScore\ for\ score\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+numComments=4

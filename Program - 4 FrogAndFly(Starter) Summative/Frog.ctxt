@@ -1,8 +1,19 @@
 #BlueJ class context
 comment0.target=Frog
-comment0.text=\n\ 10\ marks\n
+comment0.text=\r\n\ 10\ marks\r\n
 comment1.params=
 comment1.target=Frog()
+comment1.text=\r\n\ when\ a\ frog\ is\ added\ is\ set\ the\ speed\ to\ a\ random\ number\ between\ 4-8\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
 comment2.params=
 comment2.target=void\ act()
-numComments=3
+comment2.text=\r\n\ runs\ toutchingFly,\ atEdge,\ and\ moveFrog\ evey\ cycle\ of\ the\ program\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+comment3.params=
+comment3.target=void\ moveFrog()
+comment3.text=\r\n\ moves\ the\ frog\ forward\ the\ speed\ amount,\ 35%\ of\ the\ time\ it\ turns\ left\ or\ right\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+comment4.params=
+comment4.target=void\ atEdge()
+comment4.text=\r\n\ if\ the\ frog\ is\ at\ the\ edg\ of\ the\ world\ it\ turns\ the\ frog\ 7\ \ degress\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+comment5.params=
+comment5.target=void\ toutchingFly()
+comment5.text=\r\n\ if\ the\ frog\ is\ toutching\ a\ fly\ it\ removes\ the\ fly\ than\ stops\ the\ program\r\n\ \r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ nothing\ is\ returned\r\n
+numComments=6

@@ -9,30 +9,72 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Fly extends Creature
 {
+    /**
+     * when a fly is added is sets the rotation to a random number between 0 and 360
+     * 
+     * @param there are no parameters
+     * @return nothing is returned
+     */
     public Fly()
     {
-        /*
-         * modify this code to make the turtle face any random 
-         * initial direction
-         */
-        setRotation( 90 );
+        setRotation(Greenfoot.getRandomNumber(360));
     }
-    
+
+    /**
+     * runs toutchingFood and checkKeys evey cycle of the program
+     * 
+     * @param there are no parameters
+     * @return nothing is returned
+     */
     public void act() 
     {
-        // make the fly move 4 steps in the direction it is facing
-        
-        /*
-         * Make the fly turn left or right 5 degrees when
-         * the left or right arrow key is pressed. 
-         */
-        
-        
-        /*
-         * If the fly touches a Food object, remove the Food object
-         * from the world. 
-         */
-        
-        
+        checkKeys();
+        toutchingFood();
+
     }    
+    /**
+     * if the fly is toutching food is removes the toutching food and adds one
+     * to the scoreboard if it has eaten all of the food it adds 10 more
+     * pices of food
+     * 
+     * @param there are no parameters
+     * @return nothing is returned
+     */
+    public void toutchingFood()
+    {
+        if(isTouching(Food.class))
+        {
+            removeTouching(Food.class);
+            ( (Beach)getWorld()).update();
+            if(getWorld().getObjects(Food.class).isEmpty() == true)
+            {
+                ( (Beach)getWorld()).addFood(10);
+            }
+        } 
+    }
+    /**
+     * if a key is pressed based on what key is pressed it moves or turns the 
+     * the fly
+     * 
+     * @param there are no parameters
+     * @return nothing is returned
+     */
+    public void checkKeys()
+    {
+        if(Greenfoot.isKeyDown("left") == true)
+        {
+            //rotate crab -5 pixles
+            turn(-5);
+        }
+        //if the right key is down
+        else if(Greenfoot.isKeyDown("right") == true)
+        {
+            //rotate crab 5 pixles
+            turn(5);
+        }
+        if(Greenfoot.isKeyDown("up") == true)
+        {
+            move(4);   
+        }
+    }
 }
