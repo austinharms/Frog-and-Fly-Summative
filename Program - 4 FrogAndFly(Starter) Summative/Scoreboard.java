@@ -18,6 +18,7 @@ public class Scoreboard extends Actor
         points = 0;
         GreenfootImage img = new GreenfootImage(150,30);
         img.setFont( myFont );
+        
         img.drawString("Score: " + points, 5,25);
         setImage(img);
     }
@@ -33,6 +34,8 @@ public class Scoreboard extends Actor
         points++;
         GreenfootImage img = getImage();
         img.clear();
+        
         img.drawString("Score: " + points, 5,25); 
+        
     }    
 }
